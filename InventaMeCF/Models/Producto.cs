@@ -13,7 +13,7 @@ namespace InventaMeCF.Models
         public string Descripcion { get; set; }
         public int MarcaId { get; set; }
         [ForeignKey("MarcaId")]
-        public virtual Marca Marca { get; set; }
+        public virtual Marca? Marca { get; set; }
 
 
 

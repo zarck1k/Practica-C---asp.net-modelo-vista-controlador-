@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using InventaMeCF.Seeds;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace InventaMeCF.Models
@@ -12,5 +13,15 @@ namespace InventaMeCF.Models
         public DbSet<Marca> Marcas { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<UnidadMedida> UnidadMedidas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            new UsuarioSeed(modelBuilder); //Esto concedta con la carpeta seeds para poder migrar esos seders
+            new MarcasSeed(modelBuilder);
+        }
+
     }
+
 }

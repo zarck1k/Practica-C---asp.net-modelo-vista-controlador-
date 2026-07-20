@@ -35,7 +35,24 @@ namespace InventaMeCF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Marcas", (string)null);
+                    b.ToTable("Marcas");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Nike"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Adidas"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Puma"
+                        });
                 });
 
             modelBuilder.Entity("InventaMeCF.Models.Producto", b =>
@@ -45,6 +62,10 @@ namespace InventaMeCF.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<int>("MarcaId")
                         .HasColumnType("integer");
@@ -60,7 +81,7 @@ namespace InventaMeCF.Migrations
 
                     b.HasIndex("MarcaId");
 
-                    b.ToTable("Productos", (string)null);
+                    b.ToTable("Productos");
                 });
 
             modelBuilder.Entity("InventaMeCF.Models.UnidadMedida", b =>
@@ -77,7 +98,55 @@ namespace InventaMeCF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UnidadMedidas", (string)null);
+                    b.ToTable("UnidadMedidas");
+                });
+
+            modelBuilder.Entity("InventaMeCF.Models.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Clave")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Correo")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuarios");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 4,
+                            Clave = "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+                            Correo = "mcortez_vasquez@yahoo.com",
+                            Nombre = "miguel"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Clave = "6bab3007f56e2a9175ff1222c2654ddcd08fa7981a1ddc42f1d95cfbd80ede47",
+                            Correo = "andrea@gmail.com",
+                            Nombre = "andrea"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Clave = "a29bb351ab7025926eb34a77f0485a0f8ab9dc993009f990cbd8eabbf0d947e3",
+                            Correo = "daniel@gmail.com",
+                            Nombre = "daniel"
+                        });
                 });
 
             modelBuilder.Entity("InventaMeCF.Models.Producto", b =>
