@@ -20,6 +20,7 @@ namespace InventaMeCF.Models
 
             new UsuarioSeed(modelBuilder); //Esto concedta con la carpeta seeds para poder migrar esos seders
             new MarcasSeed(modelBuilder);
+            new ProductoSeed(modelBuilder);
         }
 
     }

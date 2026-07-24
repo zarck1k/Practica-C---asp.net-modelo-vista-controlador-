@@ -2175,23 +2175,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zarck\\.nuget\\packages\\": {},
+    "C:\\Users\\ZRK\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
+      "projectUniqueName": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\InventaMeCF.csproj",
       "projectName": "InventaMeCF",
-      "projectPath": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
-      "packagesPath": "C:\\Users\\Zarck\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\obj\\",
+      "projectPath": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\InventaMeCF.csproj",
+      "packagesPath": "C:\\Users\\ZRK\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Zarck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ZRK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2260,7 +2260,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

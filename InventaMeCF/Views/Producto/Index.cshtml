@@ -1,0 +1,59 @@
+@model InventaMeCF.Models.ProductoMarcaModelView
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Productos</h1>
+
+<p>
+    <a asp-action="Crear">Crear Nuevo</a>
+</p>
+
+<form asp-controller="Producto" asp-action="Index" method="get">
+    <p>
+        <select asp-for="ProductoMarca" asp-items="Model.Marcas">
+            <option value="0">Todas</option>
+        </select>
+
+        <label>
+            Buscar:
+            <input type="text" asp-for="CadenaString" />
+        </label>
+
+        <input type="submit" value="Filtrar" class="btn btn-primary" />
+    </p>
+</form>
+
+@if (Model.Productos != null && Model.Productos.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Productos)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Descripcion</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">
+        No hay productos registrados.
+    </div>
+}

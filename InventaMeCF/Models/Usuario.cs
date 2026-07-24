@@ -9,9 +9,15 @@ namespace InventaMeCF.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int Id { get; set; }
-        public string Nombre { get; set; }
+        [Required(ErrorMessage = "El correo es obligatorio")]
+        [Column("Correo", TypeName = "varchar(20)")]
         public string Correo { get; set; }
-        public string Clave { get; set; }
+        [Required(ErrorMessage = "La contraseña es obligatoria")]
+        [Column("Password", TypeName = "varchar(64)")]
+        public string Password { get; set; }
+        public int RolAsigandoId { get; set; }
 
+        [ForeignKey("RolAsigandoId")]
+        public virtual RolAsignad RolAsignad { get; set; }
     }
 }

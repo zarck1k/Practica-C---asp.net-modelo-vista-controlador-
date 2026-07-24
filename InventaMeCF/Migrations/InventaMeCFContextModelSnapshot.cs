@@ -65,23 +65,77 @@ namespace InventaMeCF.Migrations
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
 
                     b.Property<int>("MarcaId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(80)
+                        .HasColumnType("varchar(80)")
+                        .HasColumnName("Nombre");
 
                     b.Property<decimal>("PrecioUnitario")
-                        .HasColumnType("numeric");
+                        .HasPrecision(10, 4)
+                        .HasColumnType("numeric(10,4)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("MarcaId");
 
                     b.ToTable("Productos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Descripcion = "Tenis deportivos para uso diario.",
+                            MarcaId = 1,
+                            Nombre = "Nike Air Max 90",
+                            PrecioUnitario = 120.00m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Descripcion = "Calzado ligero para correr.",
+                            MarcaId = 1,
+                            Nombre = "Nike Revolution 7",
+                            PrecioUnitario = 85.50m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Descripcion = "Tenis deportivos con gran comodidad.",
+                            MarcaId = 2,
+                            Nombre = "Adidas Ultraboost",
+                            PrecioUnitario = 180.00m
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Descripcion = "Zapatos para fútbol.",
+                            MarcaId = 2,
+                            Nombre = "Adidas Predator",
+                            PrecioUnitario = 95.99m
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Descripcion = "Tenis casuales unisex.",
+                            MarcaId = 3,
+                            Nombre = "Puma Smash V2",
+                            PrecioUnitario = 70.00m
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Descripcion = "Calzado deportivo moderno.",
+                            MarcaId = 3,
+                            Nombre = "Puma Future Rider",
+                            PrecioUnitario = 110.75m
+                        });
                 });
 
             modelBuilder.Entity("InventaMeCF.Models.UnidadMedida", b =>
