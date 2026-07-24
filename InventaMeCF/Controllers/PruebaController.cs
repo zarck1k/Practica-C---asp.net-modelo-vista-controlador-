@@ -20,7 +20,7 @@ namespace InventaMeCF.Controllers
         {
             
             SHA256 mySHA256 = SHA256.Create();
-            byte[] datos = Encoding.UTF8.GetBytes("MEAP"); // "MEAP"
+            byte[] datos = Encoding.UTF8.GetBytes("MEAP"); // "Zarck"
             byte[] hashValue = mySHA256.ComputeHash(datos);
             string hashValueHexadecimal = BitConverter.ToString(hashValue).Replace("-", "").ToLower();
             ViewBag.HashValue = hashValue;

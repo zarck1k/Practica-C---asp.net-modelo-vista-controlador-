@@ -14,6 +14,8 @@ namespace InventaMeCF.Models
         public DbSet<Producto> Productos { get; set; }
         public DbSet<UnidadMedida> UnidadMedidas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Rol> Roles { get; set; }
+        public DbSet<RolAsignado> RolesAsignados { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,5 +26,6 @@ namespace InventaMeCF.Models
         }
 
     }
+    
 
-}
+    }

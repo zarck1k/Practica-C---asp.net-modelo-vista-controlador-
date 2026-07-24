@@ -1,34 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\",
+  "WorkspaceRootPath": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zrk\\source\\repos\\inventamecf\\inventamecf\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zrk\\source\\repos\\inventamecf\\inventamecf\\models\\rolasignad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\rolasignad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zrk\\source\\repos\\inventamecf\\inventamecf\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\views\\acceso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\views\\acceso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zrk\\source\\repos\\inventamecf\\inventamecf\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\infologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\infologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zrk\\source\\repos\\inventamecf\\inventamecf\\views\\prueba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\views\\prueba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zrk\\source\\repos\\inventamecf\\inventamecf\\controllers\\pruebacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\productomarcamodelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\productomarcamodelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\inventamecfcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\inventamecfcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\migrations\\20260724165003_addtablesaaaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\migrations\\20260724165003_addtablesaaaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\controllers\\pruebacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\controllers\\pruebacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zrk\\source\\repos\\inventamecf\\inventamecf\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724170358_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InventaMeCF\\Migrations\\20260724170358_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\rolasignado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\rolasignado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724164434_AddTablesAAA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InventaMeCF\\Migrations\\20260724164434_AddTablesAAA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|c:\\users\\zarck\\source\\repos\\practica-c---asp.net-modelo-vista-controlador-\\inventamecf\\views\\prueba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4688ABC8-0D1C-EF94-DA2D-4860CF3E7270}|InventaMeCF\\InventaMeCF.csproj|solutionrelative:inventamecf\\views\\prueba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +86,253 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RolAsignad.cs",
-              "DocumentMoniker": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\RolAsignad.cs",
-              "RelativeDocumentMoniker": "InventaMeCF\\Models\\RolAsignad.cs",
-              "ToolTip": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\RolAsignad.cs",
-              "RelativeToolTip": "InventaMeCF\\Models\\RolAsignad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T18:24:03.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Rol.cs",
-              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Rol.cs",
-              "ToolTip": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Rol.cs",
-              "RelativeToolTip": "InventaMeCF\\Models\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T18:22:07.227Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\Acceso\\Index.cshtml",
+              "RelativeDocumentMoniker": "InventaMeCF\\Views\\Acceso\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\Acceso\\Index.cshtml",
+              "RelativeToolTip": "InventaMeCF\\Views\\Acceso\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAADwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-24T18:56:52.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Producto.cs",
-              "RelativeToolTip": "InventaMeCF\\Models\\Producto.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA0AAAA0AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Program.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Program.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Program.cs",
+              "RelativeToolTip": "InventaMeCF\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T18:20:11.963Z",
+              "WhenOpened": "2026-07-24T18:46:21.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Usuario.cs",
-              "RelativeToolTip": "InventaMeCF\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Title": "AccesoController.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Controllers\\AccesoController.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Controllers\\AccesoController.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Controllers\\AccesoController.cs",
+              "RelativeToolTip": "InventaMeCF\\Controllers\\AccesoController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T18:18:32.21Z",
+              "WhenOpened": "2026-07-24T18:45:37.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260724165003_AddTablesAAAA.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724165003_AddTablesAAAA.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Migrations\\20260724165003_AddTablesAAAA.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724165003_AddTablesAAAA.cs",
+              "RelativeToolTip": "InventaMeCF\\Migrations\\20260724165003_AddTablesAAAA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T16:50:03.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InventaMeCFContext.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\InventaMeCFContext.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\InventaMeCFContext.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\InventaMeCFContext.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\InventaMeCFContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T16:43:11.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductoMarcaModelView.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\ProductoMarcaModelView.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\ProductoMarcaModelView.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\ProductoMarcaModelView.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\ProductoMarcaModelView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T16:43:09.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Views\\prueba\\Index.cshtml",
-              "RelativeDocumentMoniker": "InventaMeCF\\Views\\prueba\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Views\\prueba\\Index.cshtml",
-              "RelativeToolTip": "InventaMeCF\\Views\\prueba\\Index.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwCsAAAAeAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "InventaMeCF\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "InventaMeCF\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-23T16:37:36.768Z",
+              "WhenOpened": "2026-07-24T17:26:59.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InfoLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\InfoLogin.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\InfoLogin.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\InfoLogin.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\InfoLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T19:09:38.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "InventaMeCF\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T19:13:22.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Marca.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Marca.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Marca.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Marca.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\Marca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T17:22:27.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20260724164434_AddTablesAAA.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724164434_AddTablesAAA.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Migrations\\20260724164434_AddTablesAAA.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724164434_AddTablesAAA.cs",
+              "RelativeToolTip": "InventaMeCF\\Migrations\\20260724164434_AddTablesAAA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T16:44:34.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "InventaMeCF\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "InventaMeCF\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-24T17:27:14.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Rol.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Rol.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Rol.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\Rol.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAEwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T16:41:38.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PruebaController.cs",
-              "DocumentMoniker": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Controllers\\PruebaController.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Controllers\\PruebaController.cs",
               "RelativeDocumentMoniker": "InventaMeCF\\Controllers\\PruebaController.cs",
-              "ToolTip": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Controllers\\PruebaController.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Controllers\\PruebaController.cs",
               "RelativeToolTip": "InventaMeCF\\Controllers\\PruebaController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwBYAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-23T16:30:42.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Marca.cs",
-              "DocumentMoniker": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Marca.cs",
-              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Marca.cs",
-              "ToolTip": "C:\\Users\\ZRK\\source\\repos\\InventaMeCF\\InventaMeCF\\Models\\Marca.cs",
-              "RelativeToolTip": "InventaMeCF\\Models\\Marca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "20260724170358_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724170358_InitialCreate.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Migrations\\20260724170358_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Migrations\\20260724170358_InitialCreate.cs",
+              "RelativeToolTip": "InventaMeCF\\Migrations\\20260724170358_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T17:22:27.733Z",
+              "WhenOpened": "2026-07-24T17:03:58.656Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RolAsignado.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\RolAsignado.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\RolAsignado.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\RolAsignado.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\RolAsignado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T18:24:03.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Producto.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T18:20:11.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "InventaMeCF\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Models\\Usuario.cs",
+              "RelativeToolTip": "InventaMeCF\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T18:18:32.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\prueba\\Index.cshtml",
+              "RelativeDocumentMoniker": "InventaMeCF\\Views\\prueba\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\Views\\prueba\\Index.cshtml",
+              "RelativeToolTip": "InventaMeCF\\Views\\prueba\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAqwCsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T16:37:36.768Z"
             }
           ]
         }

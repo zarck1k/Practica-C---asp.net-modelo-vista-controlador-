@@ -2,6 +2,7 @@
 using InventaMeCF.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace InventaMeCF.Migrations
 {
     [DbContext(typeof(InventaMeCFContext))]
-    partial class InventaMeCFContextModelSnapshot : ModelSnapshot
+    [Migration("20260724164434_AddTablesAAA")]
+    partial class AddTablesAAA
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -168,6 +171,9 @@ namespace InventaMeCF.Migrations
                     b.Property<int>("RolId")
                         .HasColumnType("integer");
 
+                    b.Property<int>("RolId1")
+                        .HasColumnType("integer");
+
                     b.Property<int>("UsuarioId")
                         .HasColumnType("integer");
 
@@ -175,7 +181,7 @@ namespace InventaMeCF.Migrations
 
                     b.HasIndex("RolId");
 
-                    b.HasIndex("UsuarioId");
+                    b.HasIndex("RolId1");
 
                     b.ToTable("RolesAsignados");
                 });
@@ -263,15 +269,15 @@ namespace InventaMeCF.Migrations
 
             modelBuilder.Entity("InventaMeCF.Models.RolAsignado", b =>
                 {
-                    b.HasOne("InventaMeCF.Models.Rol", "Rol")
+                    b.HasOne("InventaMeCF.Models.Usuario", "Usuario")
                         .WithMany("RolesAsignados")
                         .HasForeignKey("RolId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("InventaMeCF.Models.Usuario", "Usuario")
+                    b.HasOne("InventaMeCF.Models.Rol", "Rol")
                         .WithMany("RolesAsignados")
-                        .HasForeignKey("UsuarioId")
+                        .HasForeignKey("RolId1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
