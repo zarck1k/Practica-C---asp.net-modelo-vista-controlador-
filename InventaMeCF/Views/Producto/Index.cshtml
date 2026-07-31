@@ -1,7 +1,15 @@
 @model InventaMeCF.Models.ProductoMarcaModelView
+@using InventaMeCF.Utilidades
 
 @{
     ViewData["Title"] = "Index";
+
+    Paginacion paginacion = new Paginacion();
+
+    if (ViewBag.Paginacion != null)
+    {
+        paginacion = ViewBag.Paginacion;
+    }
 }
 
 <h1>Productos</h1>
@@ -50,6 +58,20 @@
             }
         </tbody>
     </table>
+
+    <partial name="_Paginacion" model="paginacion" />
+
+    <div class="shadow-none p-3 mb-5 bg-light rounded">
+        @{
+            using (Html.BeginForm("ExportarXLSX", "Producto", FormMethod.Post))
+            {
+                <input type="hidden" name="id" value="1" />
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-filetype-xlsx" style="width: 1em;">&nbsp;Exportar XLSX</i>
+                </button>
+            }
+        }
+    </div>
 }
 else
 {
@@ -57,13 +79,3 @@ else
         No hay productos registrados.
     </div>
 }
-<div class="shadow-none p-3 mb-5 bg-light rounded">
-    @{
-        using (Html.BeginForm("ExportarXLSX", "Productos", FormMethod.Post))
-        {
-            <input type="hidden" name="id" value="1" />
-            <button type="submit" class="btn btn-success"><i class="bi bi-filetype-xlsx" style="width: 1em;">&nbsp;Exportar XLSX</i></button>
-        }
-        Html.EndForm();
-    }
-</div>

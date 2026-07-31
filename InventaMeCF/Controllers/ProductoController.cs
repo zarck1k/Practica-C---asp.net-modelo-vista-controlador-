@@ -1,5 +1,6 @@
 using ClosedXML.Excel;
 using InventaMeCF.Models;
+using InventaMeCF.Utilidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -66,16 +67,18 @@ namespace InventaMeCF.Controllers
                 }
             }
         }
-        public async Task<IActionResult> Index(int? productoMarca, string cadenaString)
+        public async Task<IActionResult> Index(int? productoMarca, string cadenaString, int pg = 1)
         {
             if (_context.Productos == null)
             {
-                return Problem("El conjunto 'InventaMeCFContext.Productos'  está vacío.");
+                return Problem("El conjunto 'InventaMeCFContext.Productos' está vacío.");
             }
 
-            // Use LINQ to get list of genres.
-            IQueryable<Marca> marcaQuery = from m in _context.Marcas select m;
-            var productos = from m in _context.Productos select m;
+            IQueryable<Marca> marcaQuery = from m in _context.Marcas
+                                           select m;
+
+            var productos = from p in _context.Productos
+                            select p;
 
             if (!string.IsNullOrEmpty(cadenaString))
             {
@@ -87,10 +90,25 @@ namespace InventaMeCF.Controllers
                 productos = productos.Where(x => x.Marca!.Id == productoMarca);
             }
 
+            // Obtener todos los productos filtrados
+            var lista = await productos.ToListAsync();
+
+            // PAGINACIÓN
+            var paginacion = new Paginacion(lista.Count, pg, 5, "Producto");
+
+            var datos = lista
+                .Skip(paginacion.Salto)
+                .Take(paginacion.RegistrosPagina)
+                .ToList();
+
+            ViewBag.Paginacion = paginacion;
+
             var productoMarcaVM = new ProductoMarcaModelView
             {
                 Marcas = new SelectList(marcaQuery, "Id", "Name"),
-                Productos = await productos.ToListAsync()
+                Productos = datos,
+                ProductoMarca = productoMarca,
+                CadenaString = cadenaString
             };
 
             return View(productoMarcaVM);

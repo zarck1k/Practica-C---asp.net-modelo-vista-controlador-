@@ -4,43 +4,46 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Agregar servicios
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<InventaMeCFContext>(o =>
+
+builder.Services.AddDbContext<InventaMeCFContext>(options =>
 {
-    o.UseNpgsql(builder.Configuration.GetConnectionString("conn1"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("conn1"));
 });
 
+// Autenticación por cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(option =>
-    {   
-        option.LoginPath = "/Acceso/Index";
-        option.ExpireTimeSpan = TimeSpan.FromMinutes(20);
-        option.AccessDeniedPath = "/Home/Privacy";
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Acceso/Index";
+        options.AccessDeniedPath = "/Home/Privacy";
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+        options.SlidingExpiration = true;
     });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configuración del pipeline HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
+
+// Servir archivos estáticos
+app.UseStaticFiles();
+
 app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapStaticAssets();
-
+// Rutas
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Acceso}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Acceso}/{action=Index}/{id?}");
 
 app.Run();
