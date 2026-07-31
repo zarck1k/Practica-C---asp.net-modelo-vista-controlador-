@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {}
+    "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {
+    "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
+        "projectUniqueName": "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
         "projectName": "InventaMeCF",
-        "projectPath": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
-        "packagesPath": "C:\\Users\\Zarck\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\obj\\",
+        "projectPath": "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
+        "packagesPath": "C:\\Users\\ZRK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Zarck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ZRK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,6 +52,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "ClosedXML.Report": {
+              "target": "Package",
+              "version": "[0.2.12, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.10, )"
@@ -65,6 +69,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "bogus": {
+              "target": "Package",
+              "version": "[35.6.5, )"
             }
           },
           "imports": [
@@ -86,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

@@ -155,6 +155,18 @@ namespace InventaMeCF.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nombre = "Administrador"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nombre = "Usuario"
+                        });
                 });
 
             modelBuilder.Entity("InventaMeCF.Models.RolAsignado", b =>
@@ -178,6 +190,20 @@ namespace InventaMeCF.Migrations
                     b.HasIndex("UsuarioId");
 
                     b.ToTable("RolesAsignados");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            RolId = 1,
+                            UsuarioId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            RolId = 2,
+                            UsuarioId = 2
+                        });
                 });
 
             modelBuilder.Entity("InventaMeCF.Models.UnidadMedida", b =>
@@ -229,24 +255,24 @@ namespace InventaMeCF.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 4,
-                            Clave = "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
-                            Correo = "mcortez_vasquez@yahoo.com",
-                            Nombre = "miguel"
+                            Id = 1,
+                            Clave = "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+                            Correo = "moi@example.com",
+                            Nombre = "Moies Aquio"
                         },
                         new
                         {
-                            Id = 5,
-                            Clave = "6bab3007f56e2a9175ff1222c2654ddcd08fa7981a1ddc42f1d95cfbd80ede47",
-                            Correo = "andrea@gmail.com",
-                            Nombre = "andrea"
+                            Id = 2,
+                            Clave = "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+                            Correo = "menr@example.com",
+                            Nombre = "Jhonatan Ralu"
                         },
                         new
                         {
-                            Id = 6,
-                            Clave = "a29bb351ab7025926eb34a77f0485a0f8ab9dc993009f990cbd8eabbf0d947e3",
-                            Correo = "daniel@gmail.com",
-                            Nombre = "daniel"
+                            Id = 3,
+                            Clave = "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+                            Correo = "bend2@example.com",
+                            Nombre = "BEnido juares"
                         });
                 });
 

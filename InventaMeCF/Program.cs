@@ -13,7 +13,7 @@ builder.Services.AddDbContext<InventaMeCFContext>(o =>
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(option =>
-    {
+    {   
         option.LoginPath = "/Acceso/Index";
         option.ExpireTimeSpan = TimeSpan.FromMinutes(20);
         option.AccessDeniedPath = "/Home/Privacy";
