@@ -1,0 +1,124 @@
+﻿using InventaMeCF.Models;
+using InventaMeCF.Pdf;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using QuestPDF.Infrastructure;
+using System.Security.Cryptography;
+using System.Text;
+using QuestPDF.Fluent;
+
+namespace InventaMeCF.Controllers
+{
+    public class PruebaController : Controller
+    {
+        private readonly InventaMeCFContext _context;
+
+
+        public PruebaController(InventaMeCFContext context)
+        {
+            _context = context;
+            QuestPDF.Settings.License = LicenseType.Community;
+        }
+        public async Task<IActionResult> Index()
+        {
+            
+            SHA256 mySHA256 = SHA256.Create();
+            byte[] datos = Encoding.UTF8.GetBytes("MEAP"); // "Zarck"
+            byte[] hashValue = mySHA256.ComputeHash(datos);
+            string hashValueHexadecimal = BitConverter.ToString(hashValue).Replace("-", "").ToLower();
+            ViewBag.HashValue = hashValue;
+            ViewBag.HashValueHexadecimal = hashValueHexadecimal;
+
+
+            int[] a = new int[] { 10, 20, 30, 40 };
+            ViewBag.Comentario1 = "Comentario 1";
+            ViewBag.a1 = a;
+            ViewBag.Meses = new string[]
+{
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre"
+};
+            //return View(await _context.Productos.ToListAsync());
+            return View(await _context.Productos
+                .Include(p => p.Marca)
+                .ToListAsync());
+        }
+
+        public async Task<IActionResult> Crear()
+        {
+            ViewBag.Marcas = await _context.Marcas
+                .OrderBy(m => m.Name)
+                .Select(m => new SelectListItem
+                {
+                    Value = m.Id.ToString(),
+                    Text = m.Name
+                })
+                .ToListAsync();
+
+            return View(new Producto());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Crear([Bind("Id,Nombre,Descripcion,PrecioUnitario,MarcaId")] Producto producto)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(producto);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(producto);
+        }
+
+        public async Task<IActionResult> Tarjeta(int? id)
+        {
+            var prod1 = await _context.Productos.FindAsync(id);
+            if (prod1 == null)
+            {
+                return View(null);
+            }
+            return View(prod1);
+
+        }
+        public async Task<IActionResult> ListaPrecioMedio(bool mayores)
+        {
+            if (_context.Productos == null)
+            {
+                return NotFound();
+            }
+            var precio_medio = await _context.Productos.AverageAsync(a => a.PrecioUnitario);
+            var productos = (mayores) ? await _context.Productos.Where(a => a.PrecioUnitario > precio_medio).ToListAsync() : await _context.Productos.Where(a => a.PrecioUnitario    < precio_medio).ToListAsync();
+            ViewBag.Promedio = precio_medio;
+            ViewBag.Titulo = (mayores) ? "mayores" : "menores";
+            return View(productos);
+        }
+
+        [HttpGet(Name = "GenerarRolesPdf")]
+        public IResult GenerarRolesPdf()
+        {
+            Usuario usuario = _context.Usuarios.Find(1);
+            List<Rol> roles = (from r in _context.Roles
+                                join ra in _context.RolesAsignados
+                                on r.Id equals ra.RolId
+                                where ra.UsuarioId == 1
+                                select r).ToList();
+            var data = new TablaRolesModel() { Usuario = usuario, Roles = roles };
+            var document = new TablaRolesDocument(data);
+            var pdfStream = document.GeneratePdf();
+            return Results.File(pdfStream, "application/pdf", "roles_asignados.pdf");
+        }
+
+    }
+}
