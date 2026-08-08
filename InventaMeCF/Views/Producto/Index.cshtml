@@ -1,69 +1,100 @@
 @model InventaMeCF.Models.ProductoMarcaModelView
+@using InventaMeCF.Utilidades
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Productos";
+
+    Paginacion paginacion = new Paginacion();
+    int paginaActual = 0;
+
+    if (ViewBag.Paginacion != null)
+    {
+        paginacion = ViewBag.Paginacion;
+        paginaActual = paginacion.PaginaActual;
+    }
 }
 
 <h1>Productos</h1>
 
 <p>
-    <a asp-action="Crear">Crear Nuevo</a>
+    <a asp-action="Create">Create New</a>
 </p>
 
-<form asp-controller="Producto" asp-action="Index" method="get">
-    <p>
-        <select asp-for="ProductoMarca" asp-items="Model.Marcas">
-            <option value="0">Todas</option>
-        </select>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Precio Unitario
+            </th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
 
-        <label>
-            Buscar:
-            <input type="text" asp-for="CadenaString" />
-        </label>
-
-        <input type="submit" value="Filtrar" class="btn btn-primary" />
-    </p>
-</form>
-
-@if (Model.Productos != null && Model.Productos.Any())
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Productos)
-            {
-                <tr>
-                    <td>@item.Nombre</td>
-                    <td>@item.Descripcion</td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <div class="alert alert-info">
-        No hay productos registrados.
-    </div>
-}
-<div class="shadow-none p-3 mb-5 bg-light rounded">
-    @{
-        using (Html.BeginForm("ExportarXLSX", "Productos", FormMethod.Post))
+    <tbody>
+        @foreach (var item in Model.Productos)
         {
-            <input type="hidden" name="id" value="1" />
-            <button type="submit" class="btn btn-success"><i class="bi bi-filetype-xlsx" style="width: 1em;">&nbsp;Exportar XLSX</i></button>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrecioUnitario)
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
         }
-        Html.EndForm();
-    }
-</div>
+    </tbody>
+</table>
+
+@if (paginacion.TotalPaginas > 1)
+{
+    <nav>
+        <ul class="pagination">
+
+            @if (paginaActual > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-pg="@(paginaActual - 1)">
+                        Anterior
+                    </a>
+                </li>
+            }
+
+            @for (int i = paginacion.PaginaInicio; i <= paginacion.UltimaPagina; i++)
+            {
+                <li class="page-item @(i == paginaActual ? "active" : "")">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-pg="@i">
+                        @i
+                    </a>
+                </li>
+            }
+
+            @if (paginaActual < paginacion.TotalPaginas)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-pg="@(paginaActual + 1)">
+                        Siguiente
+                    </a>
+                </li>
+            }
+
+        </ul>
+    </nav>
+}

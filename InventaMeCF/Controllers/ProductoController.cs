@@ -1,5 +1,6 @@
 using ClosedXML.Excel;
 using InventaMeCF.Models;
+using InventaMeCF.Utilidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -66,32 +67,61 @@ namespace InventaMeCF.Controllers
                 }
             }
         }
-        public async Task<IActionResult> Index(int? productoMarca, string cadenaString)
+        public async Task<IActionResult> Index(
+       int? productoMarca,
+       string cadenaString,
+       int pg = 1)
         {
             if (_context.Productos == null)
             {
-                return Problem("El conjunto 'InventaMeCFContext.Productos'  está vacío.");
+                return Problem("El conjunto 'InventaMeCFContext.Productos' está vacío.");
             }
 
-            // Use LINQ to get list of genres.
-            IQueryable<Marca> marcaQuery = from m in _context.Marcas select m;
-            var productos = from m in _context.Productos select m;
+            IQueryable<Marca> marcaQuery =
+                from m in _context.Marcas
+                select m;
+
+            var productos =
+                from m in _context.Productos
+                select m;
 
             if (!string.IsNullOrEmpty(cadenaString))
             {
-                productos = productos.Where(s => s.Nombre!.ToUpper().Contains(cadenaString.ToUpper()));
+                productos = productos.Where(s =>
+                    s.Nombre!.ToUpper().Contains(cadenaString.ToUpper()));
             }
 
             if (productoMarca.HasValue && productoMarca != 0)
             {
-                productos = productos.Where(x => x.Marca!.Id == productoMarca);
+                productos = productos.Where(x =>
+                    x.Marca!.Id == productoMarca);
             }
 
+            // Total de productos después de aplicar los filtros
+            var totalProductos = await productos.CountAsync();
+
+            // Crear paginación
+            var paginacion = new Paginacion(
+                totalProductos,
+                pg,
+                5,
+                "Producto"
+            );
+
+            // Obtener solamente los productos de la página actual
+            var productosPaginados = await productos
+                .Skip(paginacion.Salto)
+                .Take(paginacion.RegistrosPagina)
+                .ToListAsync();
+
+            // Crear ViewModel
             var productoMarcaVM = new ProductoMarcaModelView
             {
                 Marcas = new SelectList(marcaQuery, "Id", "Name"),
-                Productos = await productos.ToListAsync()
+                Productos = productosPaginados
             };
+
+            ViewBag.Paginacion = paginacion;
 
             return View(productoMarcaVM);
         }

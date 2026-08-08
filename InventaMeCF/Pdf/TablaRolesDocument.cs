@@ -36,11 +36,11 @@ namespace InventaMeCF.Pdf
                         {
                             table.ColumnsDefinition(columns =>
                             {
-                                columns.RelativeColumn(2); // Id
-                                columns.RelativeColumn(2); // Nombre
+                                columns.RelativeColumn(2); 
+                                columns.RelativeColumn(2); 
                             });
 
-                            // Header
+                      
                             table.Header(header =>
                             {
                                 header.Cell().Element(CellStyle).Text("ID");
@@ -50,7 +50,7 @@ namespace InventaMeCF.Pdf
                                     container.DefaultTextStyle(x => x.SemiBold()).PaddingVertical(5).BorderBottom(1).BorderColor(Colors.Grey.Medium);
                             });
 
-                            // Rows
+                      
                             foreach (var item in Model.Roles)
                             {
                                 table.Cell().Element(CellStyle).Text(item.Id.ToString());

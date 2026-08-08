@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventaMeCF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32beecfe1c1998d4841b32b470d4efd2a2e93898")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+605fea6acd397c1dcd5fa35702b367fcce814dfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventaMeCF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventaMeCF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
