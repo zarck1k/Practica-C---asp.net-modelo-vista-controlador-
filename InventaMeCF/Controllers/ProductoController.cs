@@ -1,11 +1,14 @@
 using ClosedXML.Excel;
 using InventaMeCF.Models;
+using InventaMeCF.Pdf;
 using InventaMeCF.Utilidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using QuestPDF.Infrastructure;
 using System.Threading.Tasks;
+using QuestPDF.Fluent;
 
 
 namespace InventaMeCF.Controllers
@@ -16,11 +19,12 @@ namespace InventaMeCF.Controllers
     {
         private readonly InventaMeCFContext _context;
 
+
         public ProductoController(InventaMeCFContext context)
         {
             _context = context;
+            QuestPDF.Settings.License = LicenseType.Community;
         }
-
 
         [HttpPost]
         public FileResult ExportarXLSX()
@@ -97,10 +101,9 @@ namespace InventaMeCF.Controllers
                     x.Marca!.Id == productoMarca);
             }
 
-            // Total de productos después de aplicar los filtros
+            
             var totalProductos = await productos.CountAsync();
 
-            // Crear paginación
             var paginacion = new Paginacion(
                 totalProductos,
                 pg,
@@ -108,13 +111,13 @@ namespace InventaMeCF.Controllers
                 "Producto"
             );
 
-            // Obtener solamente los productos de la página actual
+           
             var productosPaginados = await productos
                 .Skip(paginacion.Salto)
                 .Take(paginacion.RegistrosPagina)
                 .ToListAsync();
 
-            // Crear ViewModel
+       
             var productoMarcaVM = new ProductoMarcaModelView
             {
                 Marcas = new SelectList(marcaQuery, "Id", "Name"),
@@ -125,5 +128,26 @@ namespace InventaMeCF.Controllers
 
             return View(productoMarcaVM);
         }
+
+
+        [HttpGet(Name = "GraficoVolumenVentasPdf")]
+        public async Task<IResult> GraficoVolumenVentasPdf(int n)
+        {
+            List<VolumenVentasModel> data = await _context.Productos
+                .Select(p => new VolumenVentasModel
+                {
+                    Id = p.Id,
+                    Nombre = p.Nombre,
+                    Volumen = p.DetalleVentas.Sum(d => d.Cantidad)
+                })
+                .OrderByDescending(x => x.Volumen)
+                .Take(n)
+                .ToListAsync();
+            var document = new VolumenVentasDocument(data);
+            var pdfStream = document.GeneratePdf();
+            return Results.File(pdfStream, "application/pdf", "volumen_ventas.pdf");
+        }
+
     }
+
 }

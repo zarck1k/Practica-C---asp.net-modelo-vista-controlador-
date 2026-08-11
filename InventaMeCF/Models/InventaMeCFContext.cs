@@ -17,6 +17,11 @@ namespace InventaMeCF.Models
         public DbSet<Rol> Roles { get; set; }
         public DbSet<RolAsignado> RolesAsignados { get; set; }
 
+        public DbSet<Cliente> Clientes { get; set; } // Línea agregada
+        public DbSet<Venta> Ventas { get; set; } // Línea agregada
+        public DbSet<DetalleVenta> DetalleVentas { get; set; } // Línea agregada
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -31,3 +36,4 @@ namespace InventaMeCF.Models
     
 
     }
+

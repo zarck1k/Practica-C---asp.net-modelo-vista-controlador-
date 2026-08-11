@@ -29,6 +29,7 @@ namespace InventaMeCF.Models
 
         [ForeignKey("MarcaId")]
         public virtual Marca? Marca { get; set; }
+        public virtual ICollection<DetalleVenta> DetalleVentas { get; set; }
 
 
 

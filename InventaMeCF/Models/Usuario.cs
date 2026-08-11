@@ -24,5 +24,6 @@ namespace InventaMeCF.Models
         [Column("Clave", TypeName = "varchar(64)")]
         public string? Clave { get; set; }
         public virtual ICollection<RolAsignado> RolesAsignados { get; set; }
+        public virtual ICollection<Venta> Ventas { get; set; }
     }
 }
