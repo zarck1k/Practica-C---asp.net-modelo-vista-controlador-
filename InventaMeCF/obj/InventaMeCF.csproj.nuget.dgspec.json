@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {}
+    "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {
+    "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
+        "projectUniqueName": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
         "projectName": "InventaMeCF",
-        "projectPath": "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
-        "packagesPath": "C:\\Users\\ZRK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZRK\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\obj\\",
+        "projectPath": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\InventaMeCF.csproj",
+        "packagesPath": "C:\\Users\\Zarck\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zarck\\source\\repos\\Practica-C---asp.net-modelo-vista-controlador-\\InventaMeCF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ZRK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Zarck\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
